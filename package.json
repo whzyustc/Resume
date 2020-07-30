@@ -5,16 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"webpack",
-    "dev":"npx webpack-dev-server"
+    "build": "webpack",
+    "dev": "npx webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/react": "^16.9.34",
-    "@types/react-dom": "^16.9.7",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",

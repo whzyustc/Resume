@@ -1,2 +1,2 @@
 # QuickStart
-Quick Start to Webpack Typescript React Project
+Quick Start to Webpack Typescript Vue Project

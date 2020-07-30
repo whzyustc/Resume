@@ -4,7 +4,7 @@ const HtmlWebpackPlugin =require('html-webpack-plugin');
 
 module.exports={
     entry:{
-        index:"./src/pages/index/index.tsx",
+        index:"./src/pages/index/index.ts",
     },
 
 
@@ -18,6 +18,7 @@ module.exports={
     resolve:{
         modules:["node_modules"],
         alias:{
+            'vue$':'vue/dist/vue.esm.js',
             comp_path:path.resolve(__dirname,'src/component')
         },
         extensions:['.ts','.tsx','.js','.json']
@@ -93,7 +94,7 @@ module.exports={
         open:true,
         hot:true,
         overlay:true,
-        host:"0.0.0.0",
+        //host:"0.0.0.0",
         index:"./index.html"
 
     }
