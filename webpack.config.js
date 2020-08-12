@@ -4,7 +4,7 @@ const HtmlWebpackPlugin =require('html-webpack-plugin');
 
 module.exports={
     entry:{
-        index:"./src/pages/index/index.ts",
+        index:"./src/pages/index/index.tsx",
     },
 
 
@@ -18,14 +18,31 @@ module.exports={
     resolve:{
         modules:["node_modules"],
         alias:{
-            'vue$':'vue/dist/vue.esm.js',
-            comp_path:path.resolve(__dirname,'src/component')
+            '@component':path.resolve(__dirname,'src/component'),
+            '@images':path.resolve(__dirname,'src/images'),
+            '@css':path.resolve(__dirname,'src/css'),
+            'antd':path.resolve(__dirname,'node_modules/antd')
         },
         extensions:['.ts','.tsx','.js','.json']
     },
 
     module:{
         rules:[
+            {
+                test:/\.less$/,
+                use:[{
+                    loader:'style-loader',
+                },{
+                    loader:'css-loader',
+                },{
+                    loader:'less-loader',
+                    options:{
+                        lessOptions:{
+                            javascriptEnabled: true,
+                        }
+                    }
+                }]
+            },
             {
                 //详细loader配置
                     test: /\.css$/,
@@ -43,7 +60,8 @@ module.exports={
                         //图片大小小于8kb，会被base64处理
                         limit: 8 * 1024,
                         //esModule:false
-                        name:'[hash:10].[ext]'
+                        name:'[hash:10].[ext]',
+                        outputPath:'images/'
                     }
                 },
                 {

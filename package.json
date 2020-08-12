@@ -11,19 +11,32 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.6.11"
+    "@ant-design/icons": "^4.2.2",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router": "^5.1.8",
+    "@types/react-router-dom": "^5.1.5",
+    "antd": "^4.5.2",
+    "less": "^3.12.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "require-context": "^1.1.0",
+    "style-loader": "^1.2.1"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
-    "css-loader": "^3.5.3",
+    "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "less-loader": "^6.2.0",
     "source-map-loader": "^0.2.4",
-    "typescript": "^3.8.3",
+    "typescript": "^3.9.7",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
