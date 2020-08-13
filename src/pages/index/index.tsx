@@ -27,7 +27,7 @@ ReactDOM.render(
     <Card title="简历" >
         <Row className="resumerow" gutter={16} align="top" justify="space-around">
             <Col span={18}>
-                <Card title=" 个人信息" id="infocol" className="resumecol" >
+                <Card title=" 个人信息" id="infocol" className="resumecol" headStyle={{height:"2em"}}>
                     <ul >
                         <li>姓名：章焱 </li>
                         <li>年龄：25</li>
@@ -36,7 +36,7 @@ ReactDOM.render(
                     </ul>
                 </Card>
                 
-                <Card title="教育经历" id="educationinfo" className="resumecol">
+                <Card title="教育经历" id="educationinfo" className="resumecol" headStyle={{height:"2em"}}>
                     <ul>
                         <li>硕士 2018年9月-2021年6月	中国科学技术大学无机化学专业</li>
                         <li>本科 2014年9月-2018年6月	中国科学技术大学材料化学专业</li>
@@ -44,12 +44,12 @@ ReactDOM.render(
                 </Card>
             </Col>
             <Col span={6}>
-                <Card title="个人照片" className="resumecol" cover={<img src={photo} alt="zhangyan" style={{width:"100%"}} />}  bodyStyle={{display:"none"}}>
+                <Card title="个人照片" className="resumecol" cover={<img src={photo} alt="zhangyan" style={{width:"100%"}} />}  bodyStyle={{display:"none"}} headStyle={{height:"2em"}}>
                 </Card>
             </Col>
             
             <Col span={24}>
-                <Card id="skill" title="专业技能" className="resumecol">
+                <Card id="skill" title="专业技能" className="resumecol" headStyle={{height:"2em"}}>
                     <ul>
                     <li>熟练使用Javascript、HTML、CSS构建网页 </li>
                     <li>熟悉MySQL,MongoDB数据库使用方法</li>
@@ -62,7 +62,7 @@ ReactDOM.render(
             </Col>
 
             <Col span={24}>
-                <Card id="reward" title="获奖情况" className="resumecol">
+                <Card id="reward" title="获奖情况" className="resumecol" headStyle={{height:"2em"}}>
                     <ul>
                     <li>2015年度、2016年度 中国科学技术大学 优秀学生奖学金铜奖</li>
                     <li>2012年 全国青少年信息学奥林匹克联赛NOIP提高组一等奖</li>
@@ -73,7 +73,7 @@ ReactDOM.render(
 
             
             <Col span={24}>
-                <Card id="project" title="项目经历" className="resumecol">
+                <Card id="project" title="项目经历" className="resumecol" headStyle={{height:"2em"}}>
                     <ul>
                     <li>吴宇恩教授实验室主页：使用React框架的响应式单页面网页以及其内容管理系统，基于typescript webpack开发。
 链接：<a href="https://github.com/whzyustc/CANWebsite">https://github.com/whzyustc/CANWebsite </a><a href="http://staff.ustc.edu.cn/~yuenwu"> http://staff.ustc.edu.cn/~yuenwu</a></li>
