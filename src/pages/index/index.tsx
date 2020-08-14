@@ -26,7 +26,7 @@ import './index.less'
 ReactDOM.render(
     <Card title="简历" >
         <Row className="resumerow" gutter={16} align="top" justify="space-around">
-            <Col span={18}>
+            <Col span={19}>
                 <Card title=" 基本信息" id="infocol" className="resumecol" headStyle={{height:"2em",lineHeight:1}} bodyStyle={{padding:"1em"}}>
                     <ul >
                         <li>姓名：章焱 </li>
@@ -36,14 +36,14 @@ ReactDOM.render(
                     </ul>
                 </Card>
                 
-                <Card title="教育经历" id="educationinfo" className="resumecol" headStyle={{height:"2em",lineHeight:1}} bodyStyle={{padding:"1em"}} style={{marginTop:"1.64em"}}>
+                <Card title="教育经历" id="educationinfo" className="resumecol" headStyle={{height:"2em",lineHeight:1}} bodyStyle={{padding:"1em"}} >
                     <ul>
                         <li>硕士 2018年9月-2021年6月	中国科学技术大学无机化学专业</li>
                         <li>本科 2014年9月-2018年6月	中国科学技术大学材料化学专业</li>
                     </ul>
                 </Card>
             </Col>
-            <Col span={6}>
+            <Col span={5}>
                 <Card title="个人照片" className="resumecol" cover={<img src={photo} alt="zhangyan" style={{width:"100%"}} />}  bodyStyle={{display:"none"}} headStyle={{height:"2em",lineHeight:1}}>
                 </Card>
             </Col>
